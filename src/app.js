@@ -38,8 +38,13 @@ class Action extends React.Component {
 }
 
 class Options extends React.Component {
+  constructor(props) {
+    super(props);
+    // Bind functions
+    this.handleRemoveAll = this.handleRemoveAll.bind(this);
+  }
   handleRemoveAll() {
-    alert('removeAll');
+    console.log(this.props.options)
   }
   render() {
     return (
