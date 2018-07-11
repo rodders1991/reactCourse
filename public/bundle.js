@@ -76,13 +76,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 console.log('App.js is running');
 
-console.log(__WEBPACK_IMPORTED_MODULE_0__utils__["b" /* square */](4));
+// console.log(square(4));
+//
+// console.log(add(2,2));
+//
+// console.log(substract(50, 10));
 
-console.log(__WEBPACK_IMPORTED_MODULE_0__utils__["a" /* add */](2,2));
+// console.log(isAdult(26));
+//
+// console.log(canDrink(18));
 
-console.log(__WEBPACK_IMPORTED_MODULE_1__person__["b" /* isAdult */](26));
-
-console.log(__WEBPACK_IMPORTED_MODULE_1__person__["a" /* canDrink */](18));
+console.log(__WEBPACK_IMPORTED_MODULE_1__person__["a" /* default */](64));
 
 
 /***/ }),
@@ -93,14 +97,18 @@ console.log(__WEBPACK_IMPORTED_MODULE_1__person__["a" /* canDrink */](18));
 console.log('utils.js is running');
 
 const square = (x) => x * x;
-/* harmony export (immutable) */ __webpack_exports__["b"] = square;
+/* unused harmony export square */
 
 
 const add = (a, b) => a + b;
-/* harmony export (immutable) */ __webpack_exports__["a"] = add;
+/* unused harmony export add */
 
 
-// export { square, add };
+const substract = (a,b) => a - b;
+
+/* unused harmony default export */ var _unused_webpack_default_export = (substract);
+
+//export { square, add, substract as default };
 
 
 /***/ }),
@@ -109,12 +117,16 @@ const add = (a, b) => a + b;
 
 "use strict";
 const isAdult = (a) => a >= 18;
-/* harmony export (immutable) */ __webpack_exports__["b"] = isAdult;
+/* unused harmony export isAdult */
 
 
 const canDrink = (a) => a >= 18;
-/* harmony export (immutable) */ __webpack_exports__["a"] = canDrink;
+/* unused harmony export canDrink */
 
+
+const isSenior = (age) => age >= 65;
+
+/* harmony default export */ __webpack_exports__["a"] = (isSenior);
 
 
 /***/ })
