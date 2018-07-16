@@ -1,4 +1,4 @@
-# Indecision App
+# Expensify App
 
 ## Prerequisites
 
